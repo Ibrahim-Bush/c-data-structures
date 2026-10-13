@@ -53,3 +53,18 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# executable
+Array/*
+!Array/*.*
+Linked_list/*
+!Linked_list/*.*
+Stack/*
+!Stack/*.*
+Queue/*
+!Queue/*.*
+Hash_table/*
+!Hash_table/*.*
+BST/*
+!BST/*.*
+*.exe
