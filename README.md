@@ -6,8 +6,9 @@ This repository contains a **low-level implementation** of all **basic data stru
 
 - **Standalone Files**: Every file in this repository is a completely independent, self contained program. 
 - **No Header or Dependencies**: There are no external header files or shared helper files. Each file includes its main() function.
-- **Built from Scratch**: Implemented using low-level memory management and pointer operations without relying on any external libraries.  
- 
+- **Built from Scratch**: Implemented using low-level memory management and pointer operations without relying on any external libraries. 
+- **Zero Memory Leaks**: All dynamic memory allocations in all programs are managed and freed, ensuring a fully clean execution with safe memory management in all cases.
+
 This design makes it extremely **easy to compile** and read any **specific data structure implementation** on its own.
 
 ## Implemented Data Structures
@@ -35,3 +36,11 @@ As every file is a standalone program, you can compile and run any individual fi
     ```
         ./circular_list
     ```
+
+### Memory Leak Verification
+
+As all programs are implemented with **low-level memory control**, you can easily verify that there are **zero memory leaks** by running any executable with **Valgrind** (if you have valgrind installed on your device):
+```
+    valgrind ./circular_list
+```
+
